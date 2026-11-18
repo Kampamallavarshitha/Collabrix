@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collabrix - Work Together. Achieve More.">
+    <title>Collabrix | Project Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HOMEPAGE -->
+    <div id="homePage" class="page">
+
+        <header class="main-header">
+            <a href="#" class="logo">
+                <span class="logo-icon">C</span>
+                Collabrix
+            </a>
+
+            <nav class="main-nav">
+                <a href="#homePage">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-light" id="showLogin">Login</button>
+                <button class="btn btn-primary" id="showRegister">Get Started</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-layout">
+
+                <div class="hero-content">
+                    <span class="eyebrow">PROJECT MANAGEMENT MADE SIMPLE</span>
+
+                    <h1>
+                        Great teams build
+                        <span>great things together.</span>
+                    </h1>
+
+                    <p>
+                        Plan projects, organize tasks, manage your team,
+                        and track progress in one simple workspace.
+                        Make teamwork easier with Collabrix.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" id="heroGetStarted">
+                            Get Started <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                        <button class="btn btn-outline btn-large" id="heroLogin">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="hero-note">
+                        <span>✓</span> Easy project tracking
+                        <span>✓</span> Team collaboration
+                        <span>✓</span> Organized workflow
+                    </div>
+                </div>
+
+                <div class="hero-dashboard-preview">
+                    <div class="preview-heading">
+                        <div>
+                            <h3>Workspace Overview</h3>
+                            <p>Your team's productivity at a glance</p>
+                        </div>
+
+                        <span class="live-label">
+                            <span class="live-dot"></span>
+                            Live overview
+                        </span>
+                    </div>
+
+                    <div class="preview-stats">
+
+                        <div class="preview-card projects-card">
+                            <div class="preview-card-top">
+                                <span class="preview-icon">
+                                    <i class="fas fa-folder"></i>
+                                </span>
+                                <span class="preview-tag">Projects</span>
+                            </div>
+                            <h2 id="heroTotalProjects">0</h2>
+                            <p>Total projects</p>
+                        </div>
+
+                        <div class="preview-card finished-card">
+                            <div class="preview-card-top">
+                                <span class="preview-icon">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span class="preview-tag">Finished</span>
+                            </div>
+                            <h2 id="heroFinishedProjects">0</h2>
+                            <p>Completed projects</p>
+                        </div>
+
+                        <div class="preview-card todo-card">
+                            <div class="preview-card-top">
+                                <span class="preview-icon">
+                                    <i class="fas fa-list-check"></i>
+                                </span>
+                                <span class="preview-tag">To Do</span>
+                            </div>
+                            <h2 id="heroTodoTasks">0</h2>
+                            <p>Pending tasks</p>
+                        </div>
+
+                        <div class="preview-card priority-card">
+                            <div class="preview-card-top">
+                                <span class="preview-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </span>
+                                <span class="preview-tag">Priority</span>
+                            </div>
+                            <h2 id="heroHighPriorityTasks">0</h2>
+                            <p>High priority tasks</p>
+                        </div>
+
+                    </div>
+
+                    <div class="preview-footer">
+                        <i class="fas fa-chart-line"></i>
+                        Keep your entire team on track
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features-section" id="features">
+            <div class="section-heading">
+                <span class="eyebrow">WHAT YOU CAN DO</span>
+                <h2>Everything your team needs</h2>
+                <p>One workspace to organize your projects and collaborate effectively.</p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon purple">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Create projects, assign responsibilities, set deadlines, and monitor project progress.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>Task Tracking</h3>
+                    <p>Create tasks, assign team members, set priorities, and update task statuses.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon orange">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Collaboration</h3>
+                    <p>Keep your team organized with a shared workspace and a clear view of responsibilities.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon purple">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Understand project completion through automatically calculated progress indicators.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-table-columns"></i>
+                    </div>
+                    <h3>Kanban Board</h3>
+                    <p>Visualize your workflow and move tasks between columns using drag and drop.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon orange">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Secure Workspace</h3>
+                    <p>Register and log in to access your workspace through token-based authentication.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <span class="eyebrow">ABOUT COLLABRIX</span>
+            <h2>Better teamwork starts here.</h2>
+
+            <p>
+                Collabrix is a project management and team collaboration
+                platform designed to help teams plan work, organize tasks,
+                track deadlines, and achieve their goals together.
+            </p>
+
+            <button class="btn btn-primary btn-large" id="aboutGetStarted">
+                Start Collaborating
+            </button>
+        </section>
+
+        <footer class="main-footer">
+            <a href="#" class="logo">
+                <span class="logo-icon">C</span>
+                Collabrix
+            </a>
+
+            <p>Work Together. Achieve More.</p>
+            <span>© 2026 Collabrix. All rights reserved.</span>
+        </footer>
+
+    </div>
+
+
+    <!-- LOGIN AND REGISTRATION -->
+    <div id="authPage" class="page hidden">
+
+        <div class="auth-layout">
+
+            <aside class="auth-side">
+
+                <a href="#" class="logo auth-logo" id="backToHome">
+                    <span class="logo-icon">C</span>
+                    Collabrix
+                </a>
+
+                <div class="auth-side-content">
+                    <span class="eyebrow">YOUR WORKSPACE</span>
+
+                    <h1>Work better. Together.</h1>
+
+                    <p>
+                        Bring your projects, tasks, and team into one
+                        organized workspace. Stay focused and achieve
+                        more with Collabrix.
+                    </p>
+                </div>
+
+                <div class="auth-side-footer">
+                    Work Together. Achieve More.
+                </div>
+
+            </aside>
+
+            <main class="auth-main">
+
+                <div class="auth-card">
+
+                    <button class="back-link" id="authBackHome">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to home
+                    </button>
+
+                    <div class="auth-heading">
+                        <span class="eyebrow">COLLABRIX ACCOUNT</span>
+                        <h2 id="authTitle">Welcome back</h2>
+                        <p id="authDescription">Log in to continue to your workspace.</p>
+                    </div>
+
+                    <form id="authForm">
+
+                        <div class="form-group hidden" id="nameGroup">
+                            <label for="name">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                                minlength="8"
+                                autocomplete="current-password">
+                        </div>
+
+                        <p class="form-error" id="authError"></p>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="authSubmit">
+                            Login
+                        </button>
+
+                    </form>
+
+                    <div class="auth-switch" id="authSwitch"></div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- APPLICATION -->
+    <div id="appPage" class="page hidden">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="#" class="logo sidebar-logo">
+                <span class="logo-icon">C</span>
+                Collabrix
+            </a>
+
+            <p class="workspace-label">WORKSPACE MENU</p>
+
+            <nav class="sidebar-nav">
+
+                <button class="nav-link active" data-view="dashboard">
+                    <span><i class="fas fa-chart-pie"></i></span>
+                    Dashboard
+                </button>
+
+                <button class="nav-link" data-view="projects">
+                    <span><i class="fas fa-folder"></i></span>
+                    Projects
+                </button>
+
+                <button class="nav-link" data-view="tasks">
+                    <span><i class="fas fa-list-check"></i></span>
+                    Tasks
+                </button>
+
+                <button class="nav-link" data-view="board">
+                    <span><i class="fas fa-table-columns"></i></span>
+                    Kanban Board
+                </button>
+
+                <button class="nav-link" data-view="team">
+                    <span><i class="fas fa-users"></i></span>
+                    Team
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-user">
+                    <div class="avatar" id="sidebarAvatar">U</div>
+
+                    <div>
+                        <strong id="sidebarUserName">User</strong>
+                        <small id="sidebarUserRole">Account</small>
+                    </div>
+                </div>
+
+                <button class="logout-button" id="logoutButton">
+                    <i class="fas fa-right-from-bracket"></i>
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="app-main">
+
+            <header class="app-header">
+
+                <div>
+                    <span class="header-label">COLLABRIX WORKSPACE</span>
+                    <h2 id="viewTitle">Dashboard</h2>
+                </div>
+
+                <div class="app-header-user">
+                    <span>Welcome, <strong id="welcomeName">User</strong></span>
+                    <div class="avatar" id="headerAvatar">U</div>
+                </div>
+
+            </header>
+
+
+            <!-- DASHBOARD -->
+            <section class="app-view" id="dashboardView">
+
+                <div class="welcome-banner">
+
+                    <div>
+                        <span class="eyebrow">YOUR WORKSPACE</span>
+                        <h2>Welcome back, <span id="dashboardName">User</span>!</h2>
+                        <p>Here's what's happening with your projects today.</p>
+                    </div>
+
+                    <button class="btn btn-primary" id="dashboardNewProject">
+                        <i class="fas fa-plus"></i>
+                        New Project
+                    </button>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <span>Total Projects</span>
+                        <strong id="totalProjects">0</strong>
+                        <small>Projects in your workspace</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Total Tasks</span>
+                        <strong id="totalTasks">0</strong>
+                        <small>Tasks created</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Completed Tasks</span>
+                        <strong id="completedTasks">0</strong>
+                        <small>Successfully completed</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Pending Tasks</span>
+                        <strong id="pendingTasks">0</strong>
+                        <small>Tasks remaining</small>
+                    </div>
+
+                </div>
+
+
+                <div class="content-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Recent Projects</h3>
+                            <p>Your latest workspace projects</p>
+                        </div>
+
+                        <button class="text-button" data-go-view="projects">
+                            View All
+                        </button>
+                    </div>
+
+                    <div class="project-list" id="recentProjects"></div>
+
+                </div>
+
+
+                <div class="content-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Recent Tasks</h3>
+                            <p>Stay updated with your team's tasks</p>
+                        </div>
+
+                        <button class="text-button" data-go-view="tasks">
+                            View All
+                        </button>
+                    </div>
+
+                    <div class="task-list" id="recentTasks"></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+            <section class="app-view hidden" id="projectsView">
+
+                <div class="page-intro">
+                    <div>
+                        <h2>Projects</h2>
+                        <p>Create and manage all your team projects.</p>
+                    </div>
+
+                    <button class="btn btn-primary" id="addProjectButton">
+                        <i class="fas fa-plus"></i>
+                        Add Project
+                    </button>
+                </div>
+
+                <div class="project-grid" id="allProjects"></div>
+
+            </section>
+
+
+            <!-- TASKS -->
+            <section class="app-view hidden" id="tasksView">
+
+                <div class="page-intro">
+                    <div>
+                        <h2>Tasks</h2>
+                        <p>Manage assignments, priorities, and deadlines.</p>
+                    </div>
+
+                    <button class="btn btn-primary" id="addTaskButton">
+                        <i class="fas fa-plus"></i>
+                        Add Task
+                    </button>
+                </div>
+
+                <div class="content-card">
+                    <div class="task-list" id="allTasks"></div>
+                </div>
+
+            </section>
+
+
+            <!-- KANBAN BOARD -->
+            <section class="app-view hidden" id="boardView">
+
+                <div class="page-intro">
+                    <div>
+                        <h2>Kanban Board</h2>
+                        <p>Move task cards between columns to update their status.</p>
+                    </div>
+
+                    <button class="btn btn-primary" id="boardNewTask">
+                        <i class="fas fa-plus"></i>
+                        Add Task
+                    </button>
+                </div>
+
+                <div class="kanban-board">
+
+                    <div class="kanban-column" data-status="To Do">
+
+                        <div class="kanban-column-header">
+                            <h3>
+                                <span class="kanban-dot todo-dot"></span>
+                                To Do
+                            </h3>
+
+                            <span class="kanban-count" id="todoCount">0</span>
+                        </div>
+
+                        <div class="kanban-task-list" id="boardTodo"></div>
+
+                    </div>
+
+
+                    <div class="kanban-column" data-status="In Progress">
+
+                        <div class="kanban-column-header">
+                            <h3>
+                                <span class="kanban-dot progress-dot"></span>
+                                In Progress
+                            </h3>
+
+                            <span class="kanban-count" id="progressCount">0</span>
+                        </div>
+
+                        <div class="kanban-task-list" id="boardInProgress"></div>
+
+                    </div>
+
+
+                    <div class="kanban-column" data-status="Completed">
+
+                        <div class="kanban-column-header">
+                            <h3>
+                                <span class="kanban-dot completed-dot"></span>
+                                Completed
+                            </h3>
+
+                            <span class="kanban-count" id="completedCount">0</span>
+                        </div>
+
+                        <div class="kanban-task-list" id="boardCompleted"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TEAM -->
+            <section class="app-view hidden" id="teamView">
+
+                <div class="page-intro">
+                    <div>
+                        <h2>Team Members</h2>
+                        <p>People who are part of your workspace.</p>
+                    </div>
+                </div>
+
+                <div class="team-grid" id="teamMembers"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- CREATE PROJECT MODAL -->
+    <div class="modal hidden" id="projectModal">
+
+        <div class="modal-card">
+
+            <div class="modal-heading">
+                <h3>Create New Project</h3>
+
+                <button class="modal-close" type="button" data-close="projectModal">
+                    &times;
+                </button>
+            </div>
+
+            <form id="projectForm">
+
+                <div class="form-group">
+                    <label for="projectName">Project Name</label>
+                    <input
+                        type="text"
+                        id="projectName"
+                        placeholder="Enter project name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectDescription">Description</label>
+                    <textarea
+                        id="projectDescription"
+                        placeholder="Describe your project"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectAssignedBy">Assigned By</label>
+                    <select id="projectAssignedBy" required></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectCreatedBy">Created By</label>
+                    <select id="projectCreatedBy" required></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectDeadline">Deadline</label>
+                    <input type="date" id="projectDeadline">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="projectSubmitButton">
+                    Create Project
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- CREATE TASK MODAL -->
+    <div class="modal hidden" id="taskModal">
+
+        <div class="modal-card">
+
+            <div class="modal-heading">
+                <h3>Create New Task</h3>
+
+                <button class="modal-close" type="button" data-close="taskModal">
+                    &times;
+                </button>
+            </div>
+
+            <form id="taskForm">
+
+                <div class="form-group">
+                    <label for="taskName">Task Name</label>
+                    <input
+                        type="text"
+                        id="taskName"
+                        placeholder="Enter task name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskDescription">Description</label>
+                    <textarea
+                        id="taskDescription"
+                        placeholder="Describe the task"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskProject">Project</label>
+                    <select id="taskProject">
+                        <option value="">None</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskAssignedTo">Assigned To</label>
+                    <select id="taskAssignedTo" required></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskStartDate">Start Date</label>
+                    <input type="date" id="taskStartDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="taskEndDate">End Date</label>
+                    <input type="date" id="taskEndDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority">
+                        <option value="Low">Low</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskStatus">Status</label>
+                    <select id="taskStatus">
+                        <option value="To Do">To Do</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="taskSubmitButton">
+                    Create Task
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js" defer></script>
+
+</body>
+</html>
